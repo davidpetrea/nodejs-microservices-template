@@ -9,8 +9,9 @@ services:
     depends_on:
       - clientsvc
   clientsvc:
-    container_name: 'client-service'
     build: ./client-service
+    deploy:
+      replicas: 2
   usersvc:
     container_name: 'user-service'
     build: ./user-service
