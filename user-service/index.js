@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.USER_SERVICE_PORT || 5000;
 
 app.get('/api/hello', async (req, res) => {
-  res.status(200).json({ msg: 'Hello world!' });
+  res.status(200).json({ msg: 'Hello from USER SERVICE!' });
 });
 
 //Start server

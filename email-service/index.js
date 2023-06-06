@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.EMAIL_SERVICE_PORT || 5001;
 
 app.get('/api/hello', (req, res) => {
-  res.status(200).json({ msg: 'Hello world but from email!' });
+  res.status(200).json({ msg: 'Hello from EMAIL SERVICE' });
 });
 
 //Start server
